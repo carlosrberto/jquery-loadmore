@@ -56,3 +56,12 @@ Options
         </tr>
     </tbody>             
 </table>
+
+Usage
+-----
+
+    $('#container').loadmore(options);
+
+Loading data:
+
+    $('#container').loadmore('load');
