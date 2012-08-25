@@ -85,7 +85,7 @@
             that.isLoading = false;
             that.settings.onAfterPageIncrement.call(this);
         }
-    }
+    };
 
     $.fn.loadmore = function( method ) {
         return this.each(function() {
