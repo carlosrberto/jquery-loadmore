@@ -1,6 +1,6 @@
 /*
 * jQuery loadmore
-* http://carlosrberto.github.com/jquery-selectskin/
+* https://github.com/carlosrberto/jquery-loadmore
 *
 * Copyright (c) 2012 Carlos Roberto Gomes Junior
 * http://carlosroberto.name/
