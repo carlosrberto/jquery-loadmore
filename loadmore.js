@@ -23,6 +23,7 @@
         onBeforeLoad: function() {},
         onBeforeAppend: function(dataFragment) {},
         onAfterAppend: function() {},
+        onAfterPageIncrement: function() {},
         onEndPages: function() {}
     };
     
