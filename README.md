@@ -49,7 +49,11 @@ Options
         <tr>
             <td>onAfterAppend</td>
             <td>function() {}</td>
-        </tr>                                
+        </tr>                  
+        <tr>
+            <td>onAfterPageIncrement</td>
+            <td>function() {}</td>
+        </tr>        
         <tr>
             <td>onEndPages</td>
             <td>function() {}</td>
