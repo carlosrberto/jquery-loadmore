@@ -64,8 +64,8 @@ Options
 Usage
 -----
 
-    $('#container').loadmore(options);
+    $('#container').loadmore( options );
 
 Loading data:
 
-    $('#container').loadmore('load');
+    $('#container').loadmore( 'load' );
