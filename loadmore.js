@@ -21,8 +21,7 @@
         pageNumber: 1,
         maxPages: 10,
         autoAppend: true,
-        selector: null,
-        buttonSelector: null
+        selector: null
     };
     
     function LoadMore(container, options){
@@ -44,15 +43,6 @@
     }
 
     LoadMore.prototype = {
-
-        initButtonEvents: function() {
-            if ( typeof this.settings.buttonSelector === 'string' ) {
-                $('body').on('click', this.settings.buttonSelector, $.proxy(function( event ) {
-                    event.preventDefault();
-                    this.load();
-                }, this));
-            }
-        },
 
         setOptions: function( options ) {
             this.settings = $.extend({}, this.settings, options);

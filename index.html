@@ -88,6 +88,11 @@
             $('ul').on('endpages.loadmore', function( event ) {
                 $('.log').text('no more pages!!');
             });
+
+            $('.load-more').on('click', function( event ) {
+                event.preventDefault();
+                $('ul').loadmore('load');
+            });
         });
     </script>
 </body>
