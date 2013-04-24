@@ -1,71 +1,44 @@
-jQuery loadmore
-===============
+# jQuery loadmore
 
-A jQuery plugin for ajax pagination
+A jQuery plugin to add the "load more" functionality
 
-Options
--------
+## Options
 
-<table>
-    <thead>
-        <tr>
-            <th>Option</th>
-            <th>Default</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>url</td>
-            <td>'/path/'</td>
-        </tr>
-        <tr>
-            <td>pageNumber</td>
-            <td>1</td>
-        </tr>
-        <tr>
-            <td>maxPages</td>
-            <td>1000</td>
-        </tr>
-        <tr>
-            <td>autoAppend</td>
-            <td>true</td>
-        </tr>
-        <tr>
-            <td>onLoad</td>
-            <td>function() {}</td>
-        </tr>
-        <tr>
-            <td>onError</td>
-            <td>function() {}</td>
-        </tr>             
-        <tr>
-            <td>onBeforeLoad</td>
-            <td>function() {}</td>
-        </tr>             
-        <tr>
-            <td>onBeforeAppend</td>
-            <td>function(dataFragment) {}</td>
-        </tr>             
-        <tr>
-            <td>onAfterAppend</td>
-            <td>function() {}</td>
-        </tr>                  
-        <tr>
-            <td>onAfterPageIncrement</td>
-            <td>function() {}</td>
-        </tr>        
-        <tr>
-            <td>onEndPages</td>
-            <td>function() {}</td>
-        </tr>
-    </tbody>             
-</table>
+|   Option   | Default |                                                            Description                                                            |
+|------------|---------|-----------------------------------------------------------------------------------------------------------------------------------|
+| url        | ''      | The path to load content                                                                                                          |
+| pageVar    | 'page'  | Query String passed with the `url` parameter                                                                                      |
+| extraVars  | {}      | Extra variables to pass in the query string                                                                                       |
+| pageNumber | 1       | Initial page number                                                                                                               |
+| maxPages   | 10      | The maximum number of pages generate by pagination in the server side                                                             |
+| autoAppend | true    | If `true` content will be appended automatically, if false you can customize the behavior using the `'load.loadmore` plugin event |
+| selector   | null    | if passed only the requested selector will be loaded, similar behavior from (`$('el').load('url #selector')`)                     |
+|            |         |                                                                                                                                   |
 
-Usage
------
+## Events
 
-    $('#container').loadmore( options );
+* `beforeload.loadmore` 
+* `error.loadmore`      
+* `load.loadmore`       
+* `endpages.loadmore`   
+
+
+## Usage
+
+```javascript
+$('#selector').loadmore( options );
+```
 
 Loading data:
 
-    $('#container').loadmore( 'load' );
+```javascript
+$('#selector').loadmore( 'load' );
+```
+
+Add Events
+
+```javascript
+$('#selector').on('load.loadmore', function( event, html, page ) {
+    $('.log').text('content loaded, page: ' + page);
+});
+```
