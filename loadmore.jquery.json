@@ -1,0 +1,39 @@
+{
+    "name": "loadmore",
+    "title": "jQuery loadmore",
+    "description": "A jQuery plugin to add the \"load more\" functionality",
+    "keywords": [
+        "ajax",
+        "loadmore",
+        "more",
+        "pagination",
+        "twitter",
+        "load on demand",
+        "load"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Carlos Roberto Gomes Junior",
+        "url": "http://http://carlosroberto.name/"
+    },
+    "maintainers": [
+        {
+            "name": "Carlos Roberto Gomes Junior",
+            "email": "carlos.rberto@gmail.com",
+            "url": "http://carlosroberto.name/"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "Creative Commons Attribution 3.0 License",
+            "url": "http://creativecommons.org/licenses/by-sa/3.0/"
+        }
+    ],
+    "bugs": "https://github.com/carlosrberto/jquery-loadmore/issues",
+    "homepage": "http://carlosrberto.github.com/jquery-loadmore/",
+    "docs": "http://carlosrberto.github.com/jquery-loadmore/",
+    "download": "https://github.com/carlosrberto/jquery-loadmore/tags",
+    "dependencies": {
+        "jquery": ">=1.3"
+    }
+}

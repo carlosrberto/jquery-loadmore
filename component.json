@@ -1,0 +1,12 @@
+{
+    "name": "loadmore",
+    "version": "1.0.0",
+    "main": "./src/jquery.loadmore.js",
+    "dependencies": {
+       "jquery": ">=1.3"
+    },  
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/carlosrberto/jquery-loadmore.git"
+    }
+}
